@@ -9,30 +9,47 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-
-        <header>
-            <div class="container-fluid">
-                <div class="row justify-content-between px-1 py-4">
-                    <div class="col-4">Start Bootstrap</div>
-                    <div class="col-2">icona</div>
+        <header class="container-fluid _nightblue">
+            <div class="row align-items-center px-1 py-4">
+                <div class="col-10 col-md-7">
+                    <h1 class="text-white">START BOOTSTRAP</h1>
                 </div>
-            </div>
-        </header>
 
+                <div class="col-2 col-md-5 text-white">
+                    <!-- hamburger menu -->
+                    <i class="bi bi-list fs-1 text-end d-md-none"></i>
+                    <!-- nav nascosta in mobile -->
+                    <ul class="nav d-none d-md-flex">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>      
+            </div>    
+        </header>
+        <!-- MAIN CONTENT --> 
         <main>
+            <!-- JUMBOTRON -->
             <section id="jumbotron">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 mt-4">
-                            <h1 class="text-center">START BOOTSTRAP</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-2 mt-4">
+                            <img src="img/avatar.svg" alt="avatar" class="img-fluid">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12 mt-4">
-                            <h1 class="text-center">START BOOTSTRAP</h1>
+                            <h1 class="text-white text-center">START BOOTSTRAP</h1>
                         </div>
                     </div>
 
@@ -43,39 +60,51 @@
                     </div>
                 </div>
             </section>
-    
+            <!-- PORTFOLIO -->
             <section id="portfolio">
-                <div class="container mt-5">
+                <div class="container mt-5 px-4">
                     <div class="row">
                         <div class="col-12">
                             <h2 class="text-center">PORTFOLIO</h2>
                         </div>
-                        <div class="col">
-                            <i class="bi bi-star-fill fs-1"></i>
-                        </div>
                     </div>
     
                     <div class="row g-4">
-                        <div class="col-12 col-md-6 col-lg-4 rounded debug">1</div>
-                        <div class="col-12 col-md-6 col-lg-4 rounded debug">2</div>
-                        <div class="col-12 col-md-6 col-lg-4 rounded debug">3</div>
-                        <div class="col-12 col-md-6 col-lg-4 rounded debug">4</div>
-                        <div class="col-12 col-md-6 col-lg-4 rounded debug">5</div>
-                        <div class="col-12 col-md-6 col-lg-4 rounded debug">6</div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/cabin.png" alt="cabin" class="img-fluid rounded">
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/cake.png" alt="cake" class="img-fluid rounded">
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/circus.png" alt="circus" class="img-fluid rounded">
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/game.png" alt="game" class="img-fluid rounded">
+                        </div>
+                        
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/safe.png" alt="safe" class="img-fluid rounded">
+                        </div>
+                        
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="img/submarine.png" alt="submarine" class="img-fluid rounded">
+                        </div>
                     </div>
                 </div>
             </section>
-    
+            <!-- ABOUT US -->
             <section id="about-us">
-                <div class="container-fluid mt-5 py-5">
-                    <h1 class="text-center">About</h1>
+                <div class="container-fluid mt-5 py-5 text-white">
+                    <h1 class="text-center">ABOUT</h1>
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-7 m-auto col-md-6">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium suscipit, eaque temporibus necessitatibus, animi quam repellat qui dolorum corrupti nihil a quaerat corporis omnis quos. Quibusdam cumque tempora quas.</p>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium suscipit, eaque temporibus necessitatibus, animi quam repellat qui dolorum corrupti nihil a quaerat corporis omnis quos. Quibusdam cumque tempora quas.</p>
-                        </div> <div class="col-12 col-md-6">
+                        <div class="col-7 m-auto col-md-6">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium suscipit, eaque temporibus necessitatibus, animi quam repellat qui dolorum corrupti nihil a quaerat corporis omnis quos. Quibusdam cumque tempora quas.</p>
                         </div>
                     </div>
@@ -107,41 +136,37 @@
                           <textarea name="message" id="message" cols="30" rows="6" class="form-control"></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Send</button>
-                      </form>
-            </section>
-        </main>   
-        
-        <footer>
-            <div class="container-fluid">
-                <div class="row mt-4 gy-5">
-                     <div class="col-12 col-md-4">
-                         <h4 class="text-center">location</h4>
-                         <p class="text-center">2215 John Daniel Drive Clark</p>
-                     </div>
-     
-                     <div class="col-12 col-md-4">
-                         <h4 class="text-center">location</h4>
-                         <p class="text-center">2215 John Daniel Drive Clark</p>
-                     </div>
-     
-                     <div class="col-12 col-md-4 mb-5">
-                         <h4 class="text-center">location</h4>
-                         <p class="text-center">2215 John Daniel Drive Clark</p>
-                     </div>
+                        <button type="submit" class="btn _button text-white">Send</button>
+                    </form>
                 </div>
-            </div>
-
-           
-           <div class="container-fluid gx-3 _nightblue">
-                <div class="row">
-                    <div class="col p-3">
-                        <p class="text-center">copyright</p>
+            </section>
+            <!-- FIND ME -->
+            <section id="find-me" class="container-fluid _nightblue">
+                <div class="row mt-4 gy-5 text-white">
+                    <div class="col-12 col-md-4">
+                        <h4 class="text-center">LOCATION</h4>
+                        <p class="text-center fs-4">2215 John Daniel Drive Clark, MO 54243</p>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <h4 class="text-center">AROUND THE WEB</h4>
+                        <p class="text-center fs-4">lorem ipsum dolor sit amet</p>
+                    </div>
+        
+                    <div class="col-12 col-md-4">
+                        <h4 class="text-center">ABOUT FREELANCER</h4>
+                        <p class="text-center fs-4">Freelance is a free to use open source Bootstrap theme created by <a href="#" class="text-decoration-none _aquamarine">Start Bootstrap</a></p>
                     </div>
                 </div>
+            </section>
+        </main>   
 
-           </div>
-
+        <footer class="container-fluid _footer-color">
+            <div class="row p-4">
+                <div class="col-12 text-white">
+                    <p class="text-center">Copyright <i class="fa-solid fa-copyright"></i> Your Website 2019</p>
+                </div>
+            </div>
         </footer>
 
 
