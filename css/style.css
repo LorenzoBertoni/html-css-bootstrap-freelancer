@@ -49,8 +49,6 @@ body{
     padding: 10px 15px;
 }
 
-
-
 /* regole di hover personalizzate  */
 ._nav-hov:hover{
     color: var(--_primary-color);
