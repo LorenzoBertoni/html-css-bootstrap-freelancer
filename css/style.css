@@ -4,9 +4,10 @@ body{
 }
 
 :root{
-    --_primary-color: rgb(95, 189, 158);
+    --_primary-color: #23BC9C;
     --_secondary-color: #2C3E50;
     --_tertiary-color: #3A546D;
+    --_overlay-color: #178872;
 }
 
 /* colori di background personalizzati */
@@ -48,6 +49,8 @@ body{
     padding: 10px 15px;
 }
 
+
+
 /* regole di hover personalizzate  */
 ._nav-hov:hover{
     color: var(--_primary-color);
@@ -60,3 +63,5 @@ body{
 ._button:hover{
     background-color:rgb(73, 148, 123);
 }
+
+
