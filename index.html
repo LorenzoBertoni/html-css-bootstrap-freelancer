@@ -12,35 +12,36 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <header class="container-fluid _nightblue">
-            <div class="row align-items-center px-1 py-4">
-                <div class="col-10 col-md-6 col-lg-7 col-xl-8">
-                    <h1 class="text-white">START BOOTSTRAP</h1>
-                </div>
-
-                <div class="col-2 col-md-6 col-lg-5 col-xl-4 text-white">
-                    <!-- hamburger menu -->
-                    <i class="bi bi-list fs-1 text-end d-md-none"></i>
-                    <!-- nav nascosta in mobile -->
-                    <ul class="nav d-none d-md-flex">
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="#">CONTACT</a>
-                        </li>
+        <header class="container-fluid _nightblue position-fixed top-0 left-0">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 fw-bold">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link _nav-hov" aria-current="page" href="#portfolio">PORTFOLIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link _nav-hov" href="#about-us">ABOUT</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link _nav-hov" href="#contact-me" id="navbarDropdown" role="button" aria-expanded="false">
+                          CONTACT
+                        </a>
+                      </li>
                     </ul>
-                </div>      
-            </div>    
+                  </div>
+                </div>
+              </nav>
         </header>
         <!-- MAIN CONTENT --> 
         <main>
             <!-- JUMBOTRON -->
             <section id="jumbotron">
-                <div class="container-fluid">
+                <div class="container-fluid pt-5">
                     <div class="row justify-content-center">
                         <div class="col-6 col-md-4 col-lg-2 mt-4">
                             <img src="img/avatar.svg" alt="avatar" class="img-fluid">
@@ -49,26 +50,36 @@
 
                     <div class="row">
                         <div class="col-12 mt-4">
-                            <h1 class="text-white text-center">START BOOTSTRAP</h1>
+                            <h1 class="text-white text-center fw-bold">START BOOTSTRAP</h1>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 mt-4">
-                            <h1 class="text-center">START BOOTSTRAP</h1>
+                        <div class="col-12 my-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="_bar"></div>
+                                <i class="bi bi-star-fill fs-2 text-white mx-3"></i>
+                                <div class="_bar"></div>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <h3 class="text-white text-center fw-bold">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
                     </div>
                 </div>
             </section>
             <!-- PORTFOLIO -->
             <section id="portfolio">
-                <div class="container mt-5 px-4">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="text-center">PORTFOLIO</h2>
-                        </div>
+                <div class="container mt-5 px-4">                  
+                    <h2 class="text-center">PORTFOLIO</h2>
+
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="_dark-bar"></div>
+                        <i class="bi bi-star-fill _dark-star fs-2 mx-3"></i>
+                        <div class="_dark-bar"></div>
                     </div>
-    
+
                     <div class="row g-4">
                         <div class="col-12 col-md-6 col-lg-4">
                             <img src="img/cabin.png" alt="cabin" class="img-fluid rounded">
@@ -99,22 +110,41 @@
             <!-- ABOUT US -->
             <section id="about-us">
                 <div class="container-fluid mt-5 py-5 text-white">
-                    <h1 class="text-center">ABOUT</h1>
-                    <div class="row">
+                    <h1 class="text-center fw-bold">ABOUT</h1>
+
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="_bar"></div>
+                        <i class="bi bi-star-fill fs-2 text-white mx-3"></i>
+                        <div class="_bar"></div>
+                    </div>
+
+                    <div class="row fw-bold">
                         <div class="col-7 m-auto col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium suscipit, eaque temporibus necessitatibus, animi quam repellat qui dolorum corrupti nihil a quaerat corporis omnis quos. Quibusdam cumque tempora quas.</p>
+                            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization</p>
                         </div>
                         <div class="col-7 m-auto col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium suscipit, eaque temporibus necessitatibus, animi quam repellat qui dolorum corrupti nihil a quaerat corporis omnis quos. Quibusdam cumque tempora quas.</p>
+                            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share you projects, this template is perfect starting point </p>
                         </div>
                     </div>
+
+                    <div class="row mt-5">
+                        <div class="col-2 col-lg-1 m-auto">
+                            <button type="button" class="btn btn-outline-light"><i class="bi bi-download"></i>Download</button>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
-    
+            <!-- CONTACT ME -->
             <section id="contact-me">
                 <div class="container mt-5">
-                    <h1 class="text-center">CONTACT ME</h1>
-    
+                    <h1 class="text-center fw-bold">CONTACT ME</h1>
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <div class="_dark-bar"></div>
+                        <i class="bi bi-star-fill _dark-star fs-2 mx-3"></i>
+                        <div class="_dark-bar"></div>
+                    </div>
+
                     <form>
                         <div class="mb-3">
                           <label for="name" class="form-label">Name</label>
@@ -135,7 +165,6 @@
                           <label for="message" class="form-label">Message</label>
                           <textarea name="message" id="message" cols="30" rows="6" class="form-control"></textarea>
                         </div>
-                        
                         <button type="submit" class="btn _button text-white">Send</button>
                     </form>
                 </div>
@@ -150,12 +179,29 @@
         
                     <div class="col-12 col-md-4">
                         <h4 class="text-center">AROUND THE WEB</h4>
-                        <p class="text-center fs-4">lorem ipsum dolor sit amet</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="_circle mx-2">
+                                <i class="bi bi-facebook fs-2"></i>
+                            </div>
+
+                            <div class="_circle mx-2 fs-2">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </div>
+
+                            <div class="_circle mx-2 fs-2">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+
+                            <div class="_circle mx-2 fs-2">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+
+                        </div>
                     </div>
         
                     <div class="col-12 col-md-4">
                         <h4 class="text-center">ABOUT FREELANCER</h4>
-                        <p class="text-center fs-4">Freelance is a free to use open source Bootstrap theme created by <a href="#" class="text-decoration-none _aquamarine">Start Bootstrap</a></p>
+                        <p class="text-center fs-4">Freelance is a free to use open source Bootstrap theme created by <a href="#" class="text-decoration-none _link">Start Bootstrap</a></p>
                     </div>
                 </div>
             </section>
